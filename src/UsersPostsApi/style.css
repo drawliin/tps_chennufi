@@ -2,5 +2,12 @@
     border: 1px solid;
     padding: 10px;
     width: 85%;
-    margin: 10px auto;
+    margin: 20px auto;
+    background-color: hsla(160, 100%, 75%, 0.74);
+}
+.posts{
+    border: 1px solid;
+    padding: 10px;
+    margin: 5px;
+    background-color: hsla(41, 100%, 50%, 0.747);
 }

@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import EfmApi from './UsersPostsApi/EfmApi';
+import IMC from './IMC';
+import Connexion from './Connexion'
+//import Inscription from './Inscription'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+  const accounts = [{user: 'houssam', password: '123456'}, {user:'user2', password: 'pass2'}];
+
+  return(
+    <>
+      <EfmApi/>
+      <br></br><hr></hr>
+
+      <IMC/>
+      <br/><hr/>
+
+      <Connexion accounts = {accounts}/>
+      <br/><hr/>
+
+      
+
+      
+    </>
   );
 }
 

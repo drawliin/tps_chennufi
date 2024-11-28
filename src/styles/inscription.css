@@ -1,0 +1,23 @@
+.Inscription_form{
+    width: 40%;
+    background-color: hsla(0, 0%, 86%, 0.259);
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px;
+
+}
+
+.Inscription_form div{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.Inscription_form div input, .Inscription_form div select{
+    border: .5px solid hsla(0, 0%, 59%, 0.863);
+    border-radius: 10px;
+    padding: 5px;
+}

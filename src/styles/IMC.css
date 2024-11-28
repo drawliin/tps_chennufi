@@ -1,0 +1,20 @@
+.IMCform{
+    width: 50%;
+    margin: auto;
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.IMCform div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.IMCform button{
+    width: 35%;
+    margin: auto;
+}

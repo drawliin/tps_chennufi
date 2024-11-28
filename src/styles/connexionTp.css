@@ -1,0 +1,48 @@
+
+.App{
+  width: 50%;
+  min-width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: .5px solid ;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.39);
+  background-color: rgb(240, 240, 240);
+  padding: 15px;
+  margin: auto;
+}
+
+.App form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.App form input{
+  border: 1.9px solid hsla(0, 0%, 59%, 0.863);
+  height: 25px;
+  width: 50%;
+  padding: 5px;
+  margin: 9px 0;
+
+}
+.App button {
+  height: 30px;
+  width: 25%;
+  padding: 5px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: hsla(113, 81%, 42%, 0.671);
+  cursor: pointer;
+}
+
+.App button:hover{
+  background-color: hsla(113, 81%, 42%, 0.788);
+}
+
+.App span{
+  margin: 10px;
+  color: red;
+}

@@ -6,11 +6,17 @@ function General_info(props){
     const [postState, setPostState] = useState(false);
     const [activeId, setActiveId] = useState(null);
 
+    
 
-    function handlePostPreview(id){
+    function handlePostPreview(id) {
+    if (activeId === id) {
+        setPostState(!postState);
+    } else {
         setActiveId(id);
-        setPostState(ps => !ps);
+        setPostState(true);
     }
+}
+
     
 
 

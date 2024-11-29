@@ -6,6 +6,7 @@ function EfmApi(){
 
     const [data, setData] = useState(null);
     const [numOfUsers, setNumOfUsers] = useState(0);
+    const [loading, setLoading] = useState(true);
    
 
     useEffect(()=>{
@@ -15,12 +16,14 @@ function EfmApi(){
         .then(response => {
             setData(response);
             setNumOfUsers(response.length);
+            setLoading(false);
         })
     }, []);
 
     return(
         <div className='container'>
             <h1>Number of Users: {numOfUsers}</h1>
+            {loading && <p>Loading...</p>}
             {data && <General_info data={data}/>}
 
         </div>

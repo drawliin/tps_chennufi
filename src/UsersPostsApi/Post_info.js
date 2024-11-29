@@ -25,7 +25,7 @@ function Post_Info(props){
             <h3>Nombres des posts: {numOfPosts}</h3>
             {data.map(element => {
                 return(
-                    <div className='posts'>
+                    <div className='posts '>
                         <h3>{element.title}</h3>
                         <p>{element.body}</p>
                     </div>

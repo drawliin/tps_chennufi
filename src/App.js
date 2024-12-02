@@ -2,6 +2,7 @@ import React from 'react';
 import EfmApi from './UsersPostsApi/EfmApi';
 import IMC from './IMC';
 import Connexion from './Connexion'
+import SearchUserApi from './SearchUserApi';
 //import Inscription from './Inscription'
 
 
@@ -18,6 +19,9 @@ function App() {
       <br/><hr/>
 
       <Connexion accounts = {accounts}/>
+      <br/><hr/>
+
+      <SearchUserApi/>
       <br/><hr/>
 
       
